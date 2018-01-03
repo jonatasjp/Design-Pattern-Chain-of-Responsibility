@@ -10,7 +10,7 @@ public class Main {
 		
 		
 		RecuperadorArquivo recuperadorBD = new RecuperadorBancoDeDados(null);
-		RecuperadorCacheMemoria recuperadorCache = new RecuperadorCacheMemoria(recuperadorBD);
+		RecuperadorArquivo recuperadorCache = new RecuperadorCacheMemoria(recuperadorBD);
 		//No recuperar abaixo vai cair na implementação do recuperador Banco de dados e após isso salva no cache
 		recuperadorCache.recuperar("teste1");
 
